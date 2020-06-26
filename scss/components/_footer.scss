@@ -1,0 +1,136 @@
+/*============== Footer CSS ================*/
+.footer-area {
+    background: #233C50;
+    padding: 60px 0 0;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.signup-form input {
+    width: 100%;
+    border-radius: 50px;
+    height: 51px;
+}
+
+.signup-form button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #E3A900;
+    border-radius: 50px;
+    border: 0;
+}
+
+.signup-form button:after {
+    /* background: none; */
+    border-radius: 50px;
+    /* border: 0; */
+}
+
+.signup-form button:hover:after {
+    border: 0;
+}
+
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.newsletter-signup h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.single-footer-item h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.signup-form button.boxed-btn:hover {
+    /* background: #25509D; */
+}
+
+.single-footer-item.quick-links ul li a:hover {
+    color: #E3A900;
+    padding-left: 7px;
+}
+
+.single-footer-item.quick-links ul li a {
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.single-footer-item.quick-links ul li {
+    display: block;
+}
+
+.footer-contact a:hover {
+    color: #E3A900;
+}
+
+.footer-contact a {
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-bottom: 30px;
+}
+
+.footer-contact a i {
+    margin-right: 5px;
+}
+
+.footer-social-icons a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    margin-right: 7px;
+    transition: .3s;
+}
+
+.footer-social-icons a:hover {
+    background: #E3A900;
+    color: #fff;
+    border-color: #E3A900;
+}
+
+.copyright-text {
+    padding: 20px 0;
+    border-top: 1px solid #3c586e;
+    margin-top: 60px;
+}
+
+
+// scrollTop
+.scrollTop {
+    right: 2%;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    @extend %posfixed;
+    @extend %secondary-bg-color;
+    @extend %displayblock;
+    @extend %white-color;
+    @extend %textcenter;
+    @extend %basetransition2;
+    @extend %invisible;
+    font-size: 25px;
+    line-height: 40px;
+    &.scrollBtn{
+        @extend %visible;
+        bottom: 40px;
+    }
+    &:hover{
+        @extend %white-color;
+        @extend %primary-bg-color;
+    }
+}
